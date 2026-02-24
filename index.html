@@ -1674,7 +1674,7 @@
             </div>
             <!-- Phone-style frame for images (matches iframe size) -->
             <div class="image-frame">
-                <img id="modalImage" src="assets/case-study images/case-study_Page1.png" alt="Case Study Slide" 
+                <img id="modalImage" src="assets/case-study-images/case-study_Page1.png" alt="Case Study Slide" 
                      onerror="this.onerror=null; this.src='assets/case-study%20images/case-study_Page1.png';">
             </div>
             
@@ -1793,7 +1793,7 @@
             
             const imgElement = document.getElementById('modalImage');
             // Update image source – with fallback for spaces in folder name
-            const path = `assets/case-study images/case-study_Page${currentSlide}.png`;
+            const path = `assets/case-study-images/case-study_Page${currentSlide}.png`;
             imgElement.src = path;
             // If fails, try encoded version
             imgElement.onerror = function() {
@@ -1807,7 +1807,7 @@
         window.openModal = function() {
             currentSlide = 1;
             const imgElement = document.getElementById('modalImage');
-            imgElement.src = 'assets/case-study images/case-study_Page1.png';
+            imgElement.src = 'assets/case-study-images/case-study_Page1.png';
             imgElement.onerror = function() {
                 this.onerror = null;
                 this.src = 'assets/case-study%20images/case-study_Page1.png';
@@ -1925,4 +1925,5 @@
         }
     </script>
 </body>
+
 </html>
